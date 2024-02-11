@@ -16,12 +16,12 @@ enable_testing()
 # Create the test executable, mul_test, and link it with the
 # GoogleTest and GoogleMock libraries.
 add_executable(
-        conv_test
+        convolution_test
         test_utils.cpp
         convolution_test.cpp
 )
 target_link_libraries(
-        conv_test
+        convolution_test
         GTest::gtest_main
         swift_dsp
 )
@@ -40,4 +40,5 @@ target_link_libraries(
 
 
 include(GoogleTest)
-gtest_discover_tests(conv_test)
+gtest_discover_tests(convolution_test)
+gtest_discover_tests(sampling_test)

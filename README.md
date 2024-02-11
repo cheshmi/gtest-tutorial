@@ -15,7 +15,7 @@ This is a simple project to demonstrate how to use Google Test (gtest) for C++ u
 
 ### Clone the repository
 ```bash
-git clone
+git clone https://github.com/cheshmi/gtest-tutorial.git
 ```
 
 ### Build the project
@@ -26,13 +26,14 @@ cmake --build build
 ```
 
 ### Run the tests
+There are two test suites in this project: `convolution_test` and `sampling_test`.
 Tests for convolution:
 ```bash
-./build/test/conv_test
+./build/test/convolution_test
 ```
 
 Tests for sampling:
 ```bash
-./build/test/samples_test
+./build/test/sampling_test
 ```
 
