@@ -58,7 +58,7 @@ namespace swiftware {
       std::vector<std::complex<float>> twiddles;
     };
 
-    TEST_F(FFT_Fixture, DISABLED_DFT_FFT_NEAR) {
+    TEST_F(FFT_Fixture, DFT_FFT_NEAR) {
 
       DFT(data, dataFourierOriginal);
       FFT_recursive(dataComplex, dataFourierCompare);
@@ -73,7 +73,7 @@ namespace swiftware {
 
     }
 
-    TEST_F(FFT_Fixture, DISABLED_FFT_improved_NEAR) {
+    TEST_F(FFT_Fixture, FFT_improved_NEAR) {
 
       FFT_recursive(dataComplex, dataFourierOriginal);
       FFT_improved(dataComplex, dataFourierCompare, twiddles, 1);
@@ -88,7 +88,7 @@ namespace swiftware {
 
     }
 
-    TEST_F(FFT_Fixture, DISABLED_FFT_optimized_NEAR) {
+    TEST_F(FFT_Fixture, FFT_optimized_NEAR) {
 
       FFT_recursive(dataComplex, dataFourierOriginal);
       FFT_optimized(dataComplex, dataFourierCompare, twiddles);

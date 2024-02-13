@@ -37,3 +37,8 @@ Tests for sampling:
 ./build/test/sampling_test
 ```
 
+Tests for fft:
+```bash
+./build/test/fft_test
+```
+
