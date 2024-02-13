@@ -79,5 +79,7 @@ int main(int argc, char **argv) {
   test_FromFile("./script/x.txt", "./script/h.txt", "./script/y.txt");
 
   std::cout << "All tests done!" << std::endl;
+
+
   return 0;
 }

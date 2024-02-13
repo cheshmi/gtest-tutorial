@@ -38,7 +38,20 @@ target_link_libraries(
         swift_dsp
 )
 
+# Register test for fft
+add_executable(
+        fft_test
+        test_utils.cpp
+        fft_test.cpp
+)
+target_link_libraries(
+        fft_test
+        GTest::gtest_main
+        swift_dsp
+)
+
 
 include(GoogleTest)
 gtest_discover_tests(convolution_test)
 gtest_discover_tests(sampling_test)
+#gtest_discover_tests(fft_test)

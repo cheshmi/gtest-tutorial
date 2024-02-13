@@ -11,6 +11,10 @@ namespace swiftware {
   namespace teaching {
     void randomVector(int N, std::vector<float> &x);
 
+    void generateRandomSamples(std::vector<float> &x,
+                               unsigned int N, unsigned short int max,
+                               unsigned char precision);
+
     void loadVectorFromFile(const std::string &filename, std::vector<float> &x);
   }
 }
