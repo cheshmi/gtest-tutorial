@@ -5,6 +5,7 @@
 #include <vector>
 #include <fstream>
 #include <cstdlib>
+#include <cmath>
 
 namespace swiftware {
   namespace teaching {
